@@ -1,0 +1,34 @@
+
+server:
+  port: 9001
+#security:
+#  oauth2:
+#    client:
+#      client-id: code-client
+#      client-secret: code-secret-8888
+#      user-authorization-uri: http://localhost:9000/oauth/authorize
+#      access-token-uri: http://localhost:9000/oauth/token
+#    resource:
+#      jwt:
+#        key-uri: http://localhost:9000/oauth/token_key
+#        key-value: dev
+#    authorization:
+#      check-token-access: http://localhost:9000/oauth/check_token
+
+security:
+  oauth2:
+    client:
+      client-id: code-client
+      client-secret: code-secret-8888
+      user-authorization-uri: http://localhost/oauth/authorize
+      access-token-uri: http://localhost/oauth/token
+    resource:
+      jwt:
+        key-uri: http://localhost/oauth/token_key
+        key-value: dev
+    authorization:
+      check-token-access: http://localhost/oauth/check_token
+spring:
+  redis:
+    host: localhost
+    port: 6379
